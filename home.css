@@ -21,13 +21,13 @@
 	text-align: center;
 	font-size: 1.8rem;
 	margin-bottom: 1.5rem;
-	color: var(--black-1);
+	color: var(--white-1);
 }
 .hero__info {
 	text-align: center;
 	font-size: 1.4rem;
 	margin-bottom: 1.5rem;
-	color: var(--black-2);
+	color: var(--white-1);
 }
 .button__wrapper {
 	text-align: center;
@@ -70,6 +70,119 @@
 		flex: 1;
 	}
 }
+
+.slider-heading{
+	color: var(--white-1);
+	text-align: center;
+	font-size: 3.5rem;
+	margin-bottom: 3rem;
+}
+.wrapper {
+	max-width: 1100px;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+  }
+  
+  .wrapper i {
+	height: 50px;
+	width: 50px;
+	background: #fff;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	font-size: 1.25rem;
+	transform: translateY(-50%);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  
+  .wrapper i:first-child {
+	left: -22px;
+  }
+  .wrapper i:last-child {
+	right: -22px;
+  }
+  .wrapper .carousel {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: calc((100% / 3) - 12px);
+	gap: 16px;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
+	user-select: none;
+	cursor: pointer;
+  }
+  .carousel::-webkit-scrollbar {
+	display: none;
+  }
+  .carousel.no-transition {
+	scroll-behavior: auto;
+  }
+  .carousel.dragging {
+	scroll-snap-type: none;
+	scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+	cursor: grab;
+	user-select: none;
+  }
+  
+  .carousel :where(.card, .img) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .carousel .card {
+	scroll-snap-align: start;
+	height: 342px;
+	list-style: none;
+	background: var(--white-1);
+	cursor: pointer;
+	padding-bottom: 15px;
+	flex-direction: column;
+	border-radius: 8px;
+  }
+  .carousel .card .img {
+	height: 148px;
+	width: 148px;
+	border-radius: 50%;
+  }
+  .card .img img {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 4px solid #fff;
+  }
+  
+  .card h2 {
+	font-weight: 500;
+	font-size: 1.56rem;
+	margin: 30px 0 5px;
+  }
+  
+  .card span {
+	color: #6a6d78;
+	font-size: 1.31rem;
+  }
+  
+  @media screen and (max-width: 900px) {
+	.wrapper .carousel {
+	  grid-auto-columns: calc((100% / 2) - 9px);
+	}
+  }
+  @media screen and (max-width: 600px) {
+	.wrapper .carousel {
+	  grid-auto-columns: 100%;
+	}
+  }
+  
+
 /* Our Specials Section Styles */
 #ourSpecials {
 	padding-top: 10rem;
@@ -84,7 +197,7 @@
 	gap: 1rem;
 }
 .ourSpecials__item {
-	background-color: var(--lightGreen-1);
+	background-color: var(--black);
 	padding: 1.2rem;
 	padding-top: 5rem;
 	border-radius: 12px;
@@ -103,12 +216,12 @@
 }
 .ourSpecials__item__title {
 	font-size: 1.4rem;
-	color: var(--black-1);
+	color: var(--white-1);
 	font-weight: 600;
 	margin-bottom: 1rem;
 }
 .ourSpecials__item__price {
-	color: var(--green-1);
+	color: var(--red);
 	font-size: 1.4rem;
 	font-weight: 600;
 	margin-bottom: 1rem;
@@ -120,17 +233,17 @@
 }
 .ourSpecials__item__text {
 	font-size: 1.4rem;
-	color: var(--black-2);
+	color: var(--white-1);
 	font-weight: 500;
 }
 .ourSpecials__title {
 	font-size: 1.8rem;
 	margin-bottom: 1.5rem;
-	color: var(--black-1);
+	color: var(--white-1);
 }
 .ourSpecials__text {
 	font-size: 1.4rem;
-	color: var(--black-2);
+	color: var(--white-1);
 	margin-bottom: 1rem;
 }
 @media only screen and (min-width: 768px) {
@@ -186,13 +299,16 @@
 		width: 100%;
 	}
 }
+
+
+
 /* Discount Styles */
 .discount__wrapper {
 	display: flex;
 	flex-direction: column;
 	padding: 1.5rem;
 	border-radius: 12px;
-	background: var(--lightGreen-1) url(./images/discount-illustration.png)
+	background: var(--black) url(./images/discount-illustration.png)
 		no-repeat bottom right / 100px;
 }
 .discount__images {
@@ -214,12 +330,12 @@
 .discount__text {
 	font-size: 1.4rem;
 	font-weight: 900;
-	color: var(--green-1);
+	color: var(--red);
 	margin-bottom: 0.5rem;
 }
 .discount__title {
 	font-size: 1.8rem;
-	color: var(--black-1);
+	color: var(--white-1);
 	font-weight: 600;
 	margin-bottom: 1rem;
 }
@@ -231,11 +347,11 @@
 	margin-bottom: 1rem;
 }
 .discount__oldPrice {
-	color: var(--black-2);
+	color: var(--white-1);
 	text-decoration: line-through;
 }
 .discount__newPrice {
-	color: var(--green-1);
+	color: var(--red);
 }
 .discount__stars {
 	width: max-content;
@@ -305,7 +421,7 @@
 .whyUs__title {
 	font-family: Poppins;
 	font-size: 1.8rem;
-	color: var(--black-1);
+	color: var(--white-1);
 	font-weight: 500;
 	margin-bottom: 1rem;
 }
@@ -321,7 +437,7 @@
 	gap: 1rem;
 }
 .whyUs__item {
-	background: var(--lightGreen-1);
+	background: var(--black);
 	padding: 2rem;
 	border-radius: 12px;
 }
@@ -334,7 +450,7 @@
 	font-family: Poppins;
 	font-size: 1.4rem;
 	font-weight: 500;
-	color: var(--black-1);
+	color: var(--white-1);
 }
 @media only screen and (min-width: 768px) {
 	.whyUs__wrapper {
@@ -385,7 +501,7 @@
 	font-size: 1.8rem;
 	margin-bottom: 3rem;
 	text-align: center;
-	color: var(--black-1);
+	color: var(--white-1);
 }
 .testimonial__items__wrapper {
 	display: grid;
@@ -396,7 +512,7 @@
 	padding: 1rem;
 	display: flex;
 	gap: 1rem;
-	background-color: var(--lightGreen-1);
+	background-color: var(--black);
 	border-radius: 12px;
 }
 .testimonial__item__info {
@@ -472,20 +588,20 @@
 .newsletter__wrapper {
 	display: flex;
 	flex-direction: column;
-	background-color: var(--green-2);
+	background-color: var(--black);
 	padding: 1.5rem;
 	border-radius: 8px;
 	gap: 2rem;
 }
 .newsletter__title {
 	font-size: 1.8rem;
-	color: var(--black-1);
+	color: var(--red);
 	font-weight: 600;
 	margin-bottom: 1.3rem;
 }
 .newsletter__text {
 	font-size: 1.4rem;
-	color: var(--black-2);
+	color: var(--white-1);
 	font-weight: 500;
 }
 .newsletter__form form {
@@ -507,7 +623,7 @@
 	color: rgb(168, 166, 166);
 }
 .newsletter__form button[type='submit'] {
-	background-color: var(--green-1);
+	background-color: var(--red);
 	color: var(--white-1);
 	border: none;
 	font-size: 1.4rem;

@@ -18,16 +18,16 @@
 .nav__list .nav__link {
 	font-size: 1.8rem;
 	font-family: Poppins;
-	color: var(--black-2);
+	color: var(--white-1);
 	padding: 0.5rem;
 }
 .nav__list li:hover .nav__link {
-	color: var(--green-1);
+	color: var(--red);
 }
 @media only screen and (max-width: 768px) {
 	.nav {
 		position: relative;
-		/* overflow-x: scroll; */
+		
 	}
 	.nav__icon {
 		display: block;
@@ -42,7 +42,7 @@
 	.nav__close {
 		display: block;
 		position: absolute;
-		color: var(--black-1);
+		color: var(--black);
 		right: 1rem;
 		top: 1rem;
 		cursor: pointer;
@@ -54,7 +54,7 @@
 		top: 0;
 		height: 100vh;
 		width: 80%;
-		background: var(--lightGreen-1);
+		background: var(--white-1);
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
@@ -88,10 +88,12 @@
 		display: block;
 	}
 }
-/* End Nav Styles */
+
+
+
 /* Global Button Styles */
 .btn {
-	color: var(--green-1);
+	color: var(--white-1);
 	font-family: Poppins;
 	font-weight: 500;
 	border-radius: 8px;
@@ -100,7 +102,7 @@
 }
 .primary-btn {
 	color: var(--white-1);
-	background: var(--green-1);
+	background: var(--red);
 }
 @media only screen and (min-width: 700px) {
 	.btn {
@@ -108,7 +110,7 @@
 		font-size: 2rem;
 	}
 }
-/* End Global Button Styles */
+
 
 /* Store info section styles*/
 .storeInfo__wrapper {
@@ -118,7 +120,7 @@
 	gap: 1rem;
 }
 .storeInfo__item {
-	background-color: var(--lightGreen-1);
+	background-color: var(--black);
 	padding: 20px 30px;
 	text-align: center;
 	text-align: center;
@@ -135,12 +137,12 @@
 	font-family: Poppins;
 	font-weight: 500;
 	margin-bottom: 0.5rem;
-	color: var(--black-1);
+	color: var(--white-1);
 }
 .storeInfo__text {
 	font-size: 1.4rem;
 	font-family: Raleway;
-	color: var(--black-2);
+	color: var(--white-1);
 }
 @media only screen and (min-width: 768px) {
 	.storeInfo__wrapper {
@@ -168,18 +170,17 @@
 	font-size: 1.8rem;
 	margin-bottom: 2rem;
 	font-weight: 600;
-	color: var(--black-1);
+	color: var(--white-1);
 }
 .dishGrid__wrapper {
 	display: grid;
-	/* grid-template-columns: repeat(autofit, minmax(140px, 1fr)); */
 	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 	gap: 1rem;
 }
 .dishGrid__item {
 	display: flex;
 	flex-direction: column;
-	background-color: var(--lightGreen-1);
+	background-color: var(--black);
 	padding: 0.5rem;
 	border-radius: 8px;
 	gap: 0.5rem;
@@ -198,12 +199,12 @@
 	font-size: 1.4rem;
 	line-height: 1.3em;
 	font-weight: 500;
-	color: var(--black-1);
+	color: var(--white-1);
 	margin-bottom: 0.5rem;
 }
 .dishGrid__item__price {
 	font-size: 1.4rem;
-	color: var(--green-1);
+	color: var(--red);
 	font-weight: 600;
 	margin-bottom: 0.5rem;
 }
@@ -211,6 +212,12 @@
 	max-height: 15px;
 	width: max-content;
 }
+
+.hidden {
+	display: none;
+  }
+  
+
 @media only screen and (min-width: 768px) {
 	.dishGrid__title {
 		font-size: 2.4rem;
@@ -343,7 +350,7 @@ ul{
 }
 .form__title {
 	font-size: 1.8rem;
-	color: var(--black-1);
+	color: var(--white-1);
 	font-weight: 600;
 }
 .form__wrapper {

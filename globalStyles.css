@@ -6,7 +6,7 @@ html {
 body {
 	background: url(./images/bg-img.avif);
 	overflow-x: hidden;
-	visibility: hidden;
+	user-select: none;
 }
 section {
 	padding: 100px 0;
@@ -22,14 +22,11 @@ section {
 	margin: 0 auto;
 }
 :root {
-	--green-1: red;
-	--green-2: black;
-	--lightGreen-1: black;
-	--lightGreen-2: black;
-	--black-1: white;
-	--black-2: white;
-	--black-3: white;
+	--red: red;
+	--black: black;
 	--white-1: white;
+	--green: rgb(0, 66, 0);
+
 }
 img {
 	width: 100%;

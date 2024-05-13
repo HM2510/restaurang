@@ -1,423 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <title>Menu | Star Cuisine</title>
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./globalStyles.css" />
-    <link rel="stylesheet" href="./components.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
 
-    <link rel="stylesheet" href="./menu.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <title>Menu | Star Cuisine</title>
+  <link rel="stylesheet" href="./globalStyles.css">
+  <link rel="stylesheet" href="./components.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ 
+  <link rel="stylesheet" href="./menu.css">
+</head>
 
-  <body>
-    <!-- Nav Section -->
-    <div class="nav">
-      <div class="container">
-        <div class="nav__wrapper">
-          <a href="./index.html" class="logo">
-            <img src="./images/logo.svg" alt="shaif's cuisine" />
-          </a>
-          <nav>
-            <div class="nav__icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-menu"
-              >
-                <line x1="3" y1="12" x2="21" y2="12" />
-                <line x1="3" y1="6" x2="21" y2="6" />
-                <line x1="3" y1="18" x2="21" y2="18" />
+<body>
+
+  <!-- Nav Section -->
+  <div class="nav">
+    <div class="container">
+      <div class="nav__wrapper">
+        <a href="./index.html" class="logo">
+          <img src="./images/logo.svg" alt="shaif's cuisine">
+        </a>
+        <nav>
+          <div class="nav__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-menu">
+              <line x1="3" y1="12" x2="21" y2="12" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <line x1="3" y1="18" x2="21" y2="18" />
+            </svg>
+          </div>
+          <div class="nav__bgOverlay"></div>
+          <ol class="nav__list">
+            <div class="nav__close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-x">
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
             </div>
-            <div class="nav__bgOverlay"></div>
-            <ol class="nav__list">
-              <div class="nav__close">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-x"
-                >
-                  <line x1="18" y1="6" x2="6" y2="18" />
-                  <line x1="6" y1="6" x2="18" y2="18" />
-                </svg>
-              </div>
-              <div class="nav__list__wrapper">
-                <li><a class="nav__link" href="./index.html">Home</a></li>
-                <li><a class="nav__link" href="./menu.html">Menu</a></li>
-                <li><a class="nav__link" href="./about.html">About</a></li>
-                <li><a class="nav__link" href="./contact.html">Contact</a></li>
-                <li>
-                  <a href="./booking.html" class="btn primary-btn"
-                    >Book Table</a
-                  >
-                </li>
-              </div>
-            </ol>
-          </nav>
+            <div class="nav__list__wrapper">
+
+              <li><a class="nav__link" href="./index.html">Home</a></li>
+              <li><a class="nav__link" href="./menu.html">Menu</a></li>
+              <li><a class="nav__link" href="./contact.html">Contact</a></li>
+              <li><a href="./booking.html" class="btn primary-btn">Book Table</a></li>
+            </div>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+ 
+
+
+  <!-- page Title -->
+  <section id="page__title" >
+    <div class="container">
+      <h2 class="page__title__text">
+        Explore Our Menu
+      </h2>
+    </div>
+  </section>
+  <!-- Our Specials -->
+  <section id="ourSpecials">
+    <div class="container">
+      <h3 class="ourSpecials__title">Our Specials</h3>
+      <div class="ourSpecials__wrapper">
+        <div class="ourSpecials__item">
+          <div class="ourSpecials__item__img">
+            <img src="./images/food-3.png" alt="food img">
+          </div>
+          <div class="ourSpecials__item__info">
+            <h3 class="ourSpecials__item__title">
+              Sweet Potato Fries Bowl
+            </h3>
+            <h4 class="ourSpecials__item__price">$12</h4>
+            <div class="ourSpecials__item__stars">
+              <img src="./images/3star.png" alt="3 stars">
+            </div>
+          </div>
+        </div>
+        <div class="ourSpecials__item">
+          <div class="ourSpecials__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="ourSpecials__item__info">
+            <h3 class="ourSpecials__item__title">
+              Vegan Salad bowl
+            </h3>
+            <h4 class="ourSpecials__item__price">$16</h4>
+            <div class="ourSpecials__item__stars">
+              <img src="./images/3star.png" alt="3 stars">
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- End Nav Section -->
-    <!-- page Title -->
-    <section id="page__title">
-      <div class="container">
-        <h2 class="page__title__text">Explore Our Menu</h2>
-      </div>
-    </section>
-    <!-- Our Specials -->
-    <section id="ourSpecials">
-      <div class="container">
-        <h3 class="ourSpecials__title">Our Specials</h3>
-        <div class="ourSpecials__wrapper">
-          <div class="ourSpecials__item">
-            <div class="ourSpecials__item__img">
-              <img src="./images/food-3.png" alt="food img" />
-            </div>
-            <div class="ourSpecials__item__info">
-              <h3 class="ourSpecials__item__title">Sweet Potato Fries Bowl</h3>
-              <h4 class="ourSpecials__item__price">$12</h4>
-              <div class="ourSpecials__item__stars">
-                <img src="./images/3star.png" alt="3 stars" />
-              </div>
-            </div>
-          </div>
-          <div class="ourSpecials__item">
-            <div class="ourSpecials__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="ourSpecials__item__info">
-              <h3 class="ourSpecials__item__title">Vegan Salad bowl</h3>
-              <h4 class="ourSpecials__item__price">$10</h4>
-              <div class="ourSpecials__item__stars">
-                <img src="./images/3star.png" alt="3 stars" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  </section>
+ 
 
-    <!-- Top Dishes -->
-    <section id="dishGrid">
-      <div class="container">
-        <h2 class="dishGrid__title">Top Dishes</h2>
-        <div class="dishGrid__wrapper">
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Poke Bowl</h3>
-              <h3 class="dishGrid__item__price">$10</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Bowl</h3>
-              <h3 class="dishGrid__item__price">$14</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Breakfast Dishes -->
-    <section id="dishGrid">
-      <div class="container">
-        <h2 class="dishGrid__title">Breakfast</h2>
-        <div class="dishGrid__wrapper">
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
+  <!-- Top Dishes -->
+  <section id="dishGrid">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Top Dishes
+      </h2>
+      <div class="dishGrid__wrapper">
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$12</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
             </div>
           </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$14</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
             </div>
           </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
           </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$14</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Breakfast Dishes -->
-    <!-- Lunch Dishes -->
-    <section id="dishGrid">
-      <div class="container">
-        <h2 class="dishGrid__title">Lunch</h2>
-        <div class="dishGrid__wrapper">
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Lunch Dishes -->
-    <!-- Dinner Dishes -->
-    <section id="dishGrid">
-      <div class="container">
-        <h2 class="dishGrid__title">Dinner</h2>
-        <div class="dishGrid__wrapper">
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-          <div class="dishGrid__item">
-            <div class="dishGrid__item__img">
-              <img src="./images/food-1.png" alt="food img" />
-            </div>
-            <div class="dishGrid__item__info">
-              <h3 class="dishGrid__item__title">Hot Green Bowl</h3>
-              <h3 class="dishGrid__item__price">$12</h3>
-              <div class="dishGrid__item__stars">
-                <img src="./images/3star.png" alt="3 star" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+  </section>
+ 
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col">
-            <h4>company</h4>
-            <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">our services</a></li>
-              <li><a href="#">privacy policy</a></li>
-              <li><a href="#">affiliate program</a></li>
-            </ul>
+
+  
+  <!-- Breakfast Dishes -->
+  <section id="dishGrid">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Breakfast
+      </h2>
+      <div class="dishGrid__wrapper">
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
           </div>
-          <div class="footer-col">
-            <h4>get help</h4>
-            <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">shipping</a></li>
-              <li><a href="#">returns</a></li>
-              <li><a href="#">order status</a></li>
-              <li><a href="#">payment options</a></li>
-            </ul>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$12</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
           </div>
-          <div class="footer-col">
-            <h4>online shop</h4>
-            <ul>
-              <li><a href="#">watch</a></li>
-              <li><a href="#">bag</a></li>
-              <li><a href="#">shoes</a></li>
-              <li><a href="#">dress</a></li>
-            </ul>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
           </div>
-          <div class="footer-col">
-            <h4>follow us</h4>
-            <div class="social-links">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$12</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$14</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$12</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$14</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$14</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- custom script -->
-    <script src="./main.js"></script>
-  </body>
+
+
+  <!-- Lunch Dishes -->
+  <section id="dishGrid">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Lunch
+      </h2>
+      <div class="dishGrid__wrapper">
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$15</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$15</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$15</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$19</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$19</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$19</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+
+
+  <!-- Dinner Dishes -->
+  <section id="dishGrid">
+    <div class="container">
+      <h2 class="dishGrid__title">
+        Dinner
+      </h2>
+      <div class="filter-container">
+        <label for="filterSelect">Filter by Price:</label>
+        <select id="filterSelect">
+          <option value="all">All</option>
+          <option value="small">Small ($12)</option>
+          <option value="medium">Medium ($14)</option>
+          <option value="large">Large (>$14)</option>
+        </select>
+      </div>
+
+      <div class="dishGrid__wrapper">
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$12</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$14</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$14</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$18</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$18</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+        <div class="dishGrid__item">
+          <div class="dishGrid__item__img">
+            <img src="./images/food-1.png" alt="food img">
+          </div>
+          <div class="dishGrid__item__info">
+            <h3 class="dishGrid__item__title">
+              Hot Green Bowl
+            </h3>
+            <h3 class="dishGrid__item__price">$18</h3>
+            <div class="dishGrid__item__stars">
+              <img src="./images/3star.png" alt="3 star">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+  <!-- Footer -->
+   <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">watch</a></li>
+  	 				<li><a href="#">bag</a></li>
+  	 				<li><a href="#">shoes</a></li>
+  	 				<li><a href="#">dress</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+ 
+  <!-- custom script -->
+  <script src="./main.js"></script>
+</body>
+
 </html>
