@@ -6,6 +6,7 @@ const navBgOverlayEl = document.querySelector('.nav__bgOverlay');
 
 window.addEventListener('DOMContentLoaded', () =>{
   document.body.style.visibility = 'visible';
+  
 });
 
 const navOpen = () => {
@@ -27,37 +28,58 @@ navCloseEl.addEventListener('click', navClose);
 navBgOverlayEl.addEventListener('click', navClose);
 
 
-const carousel = document.querySelector(".carousel");
-const arrowBtns = document.querySelectorAll(".wrapper i");
-const firstCardWidth = carousel.querySelector(".card").offsetWidth;
-arrowBtns.forEach(function (btn) {
-  btn.addEventListener("click", function () {
-    if (btn.id === "left") {
-      carousel.scrollLeft -= firstCardWidth;
-    } else {
-      carousel.scrollLeft += firstCardWidth;
-    }
-  });
+document.addEventListener("DOMContentLoaded", function() {
+  const carousel = document.querySelector(".carousel");
+  if (carousel) {
+      const arrowBtns = document.querySelectorAll(".wrapper i");
+      const firstCard = carousel.querySelector(".card");
+      const firstCardWidth = firstCard.offsetWidth + parseInt(getComputedStyle(firstCard).marginRight);
+      
+      arrowBtns.forEach(function(btn) {
+          btn.addEventListener("click", function() {
+              if (btn.id === "left") {
+                  carousel.scrollLeft -= firstCardWidth;
+                  if (carousel.scrollLeft < 0) {
+                      carousel.scrollLeft = 0;
+                  }
+              } else {
+                  carousel.scrollLeft += firstCardWidth;
+              }
+          });
+      });
+  } else {
+      console.error("Carousel element not found!");
+  }
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const filterSelect = document.getElementById("filterSelect");
-  const dishItems = document.querySelectorAll(".dishGrid__item");
 
-  filterSelect.addEventListener("change", function () {
-    const selectedOption = filterSelect.value;
 
-    dishItems.forEach(function (item) {
-      const itemPrice = parseFloat(item.querySelector(".dishGrid__item__price").textContent.replace("$", ""));
-      if (selectedOption === "all" || 
-          (selectedOption === "small" && itemPrice <= 12) || 
-          (selectedOption === "medium" && itemPrice > 12 && itemPrice <= 14) || 
-          (selectedOption === "large" && itemPrice > 14)) {
-        item.classList.remove("hidden");
-      } else {
-        item.classList.add("hidden");
-      }
-    });
-  });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const filterSelect = document.querySelector("#filterSelect");
+  if (filterSelect) {
+      const dishItems = document.querySelectorAll(".dishGrid__item2");
+
+      filterSelect.addEventListener("change", function() {
+          const selectedOption = filterSelect.value;
+
+          dishItems.forEach(function(item) {
+              const itemPrice = parseFloat(item.getAttribute("data-price"));
+              if (selectedOption === "all" ||
+                  (selectedOption === "small" && itemPrice <= 12) ||
+                  (selectedOption === "medium" && itemPrice > 12 && itemPrice <= 14) ||
+                  (selectedOption === "large" && itemPrice > 14)) {
+                  item.classList.remove("hidden");
+              } else {
+                  item.classList.add("hidden");
+                  console.log("hello");
+              }
+          });
+      });
+  } else {
+      console.error("Filter select element not found!");
+  }
 });
+
+

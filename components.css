@@ -87,6 +87,12 @@
 	.nav__bgOverlay.active {
 		display: block;
 	}
+	.nav__list .nav__link {
+		font-size: 1.8rem;
+		font-family: Poppins;
+		color: var(--black);
+		padding: 0.5rem;
+	}
 }
 
 
@@ -185,6 +191,9 @@
 	border-radius: 8px;
 	gap: 0.5rem;
 }
+
+
+
 .dishGrid__item__img {
 	flex: 4;
 }
@@ -212,10 +221,15 @@
 	max-height: 15px;
 	width: max-content;
 }
+.dishGrid__item2 {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--black);
+	padding: 0.5rem;
+	border-radius: 8px;
+	gap: 0.5rem;
+}
 
-.hidden {
-	display: none;
-  }
   
 
 @media only screen and (min-width: 768px) {
@@ -232,6 +246,14 @@
 		border-radius: 12px;
 		gap: 1rem;
 	}
+
+	.dishGrid__item2 {
+		flex-direction: row;
+		padding: 1.5rem;
+		border-radius: 12px;
+		gap: 1rem;
+	}
+
 	.dishGrid__item__title {
 		font-size: 2.4rem;
 		margin-bottom: 1rem;
@@ -241,6 +263,11 @@
 		margin-bottom: 1rem;
 	}
 }
+
+
+.hidden {
+	display: none;
+  }
 /* Dishes Grid */
 
 /* Footer Styles */

@@ -71,9 +71,6 @@
 	margin-bottom: 20px;
   }
 
-  .hidden{
-	display: none;
-  }
 
 
 @media only screen and (min-width: 768px) {
@@ -114,3 +111,34 @@
 #dishGrid:last-of-type {
 	padding-bottom: 10rem;
 }
+
+
+
+/* Dropdown Menu */
+
+.filter__flex{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.filter-container{
+	text-align: right;
+	
+}
+
+.filter-container label{
+	color: var(--white-1);
+	font-size: 2rem;
+	margin-right: 10px;
+}
+
+.filter-container select{
+	cursor: pointer;
+	outline: none;
+	padding: 0.3rem 2rem;
+	font-size: 1.5rem;
+	font-family: Poppins;
+	border-radius: 0.5rem;
+}
+ 
